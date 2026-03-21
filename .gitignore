@@ -1,0 +1,15 @@
+# raw dataset and any zip files
+dataset/
+*.zip
+*.csv
+*.txt
+
+# extracted audio files
+extracted_audio/
+
+# spectrogram images
+spectrograms/
+dev/
+test/
+train/
+
