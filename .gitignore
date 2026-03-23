@@ -4,6 +4,8 @@ dataset/
 *.csv
 *.txt
 
+processed/
+
 # extracted audio files
 extracted_audio/
 
