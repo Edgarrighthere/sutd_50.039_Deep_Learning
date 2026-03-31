@@ -15,3 +15,6 @@ dev/
 test/
 train/
 
+# HuBERT features
+*.npz
+
