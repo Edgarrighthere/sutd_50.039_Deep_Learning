@@ -13,3 +13,13 @@ dev/
 test/
 train/
 
+
+# caches, and models.pt
+processed/wav2vec_finetune/*/segment_cache/
+processed/wav2vec_finetune/*/*.pt
+processed/wav2vec_finetune/*/checkpoint_*.pt
+processed/wav2vec_features/*/participant_chunks/
+processed/wav2vec_features/*/*.npy
+
+# allow fine-tune result csvs
+!processed/wav2vec_finetune/*/*.csv
