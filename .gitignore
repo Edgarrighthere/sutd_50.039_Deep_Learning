@@ -18,3 +18,5 @@ train/
 # HuBERT features
 *.npz
 
+# wavlm files
+wavlm/
