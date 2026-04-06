@@ -3,6 +3,10 @@ dataset/
 *.zip
 *.csv
 *.txt
+*.npz
+!processed/wav2vec_finetune/
+!processed/wav2vec_finetune/**/
+!processed/wav2vec_finetune/**/*.csv
 
 # extracted audio files
 extracted_audio/
@@ -14,12 +18,15 @@ test/
 train/
 
 
-# caches, and models.pt
-processed/wav2vec_finetune/*/segment_cache/
-processed/wav2vec_finetune/*/*.pt
-processed/wav2vec_finetune/*/checkpoint_*.pt
-processed/wav2vec_features/*/participant_chunks/
-processed/wav2vec_features/*/*.npy
 
-# allow fine-tune result csvs
-!processed/wav2vec_finetune/*/*.csv
+# ===== wav2vec finetune in best_model =====
+
+# Ignore model weights
+best_model/wav2vec_finetune/**/*.pt
+
+# Re-allow directories
+!best_model/wav2vec_finetune/
+!best_model/wav2vec_finetune/**/
+
+# Allow CSV outputs
+!best_model/wav2vec_finetune/**/*.csv
