@@ -15,8 +15,9 @@ dev/
 test/
 train/
 
-# HuBERT features
+# extracted features
 *.npz
 
-# wavlm files
-wavlm/
+# huggingface models
+models/
+wavlm-base-plus/
