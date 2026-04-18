@@ -3,8 +3,10 @@ dataset/
 *.zip
 *.csv
 *.txt
-
-processed/
+*.npz
+!processed/wav2vec_finetune/
+!processed/wav2vec_finetune/**/
+!processed/wav2vec_finetune/**/*.csv
 
 # extracted audio files
 extracted_audio/
@@ -20,4 +22,23 @@ train/
 
 # huggingface models
 models/
+bert/
+distilbert/
+mental_roberta/
+roberta/
+wav2vec2-base/
 wavlm-base-plus/
+
+# ===== wav2vec finetune in best_model =====
+
+# Ignore model weights
+best_model/wav2vec_finetune/**/*.pt
+
+# Re-allow directories
+!best_model/wav2vec_finetune/
+!best_model/wav2vec_finetune/**/
+
+# Allow CSV outputs
+!best_model/wav2vec_finetune/**/*.csv
+
+wav2vec_features/
